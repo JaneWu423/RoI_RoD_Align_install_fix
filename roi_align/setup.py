@@ -53,11 +53,11 @@ else: # PyTorch 1.0 or later
 
     #GPU version
     setup(
-        name='roi_align',
+        name='roi_align_api',
         packages=find_packages(),
         ext_modules=[
             CUDAExtension(
-                    name='roi_align',
+                    name='roi_align_api',
                     sources=['src/roi_align_cuda.cpp', 'src/roi_align_kernel.cu'],
                     include_dirs=[current_dir]+torch.utils.cpp_extension.include_paths()
                     )

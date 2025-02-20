@@ -51,11 +51,11 @@ else: # PyTorch 1.0 or later
     current_dir = os.path.dirname(os.path.realpath(__file__))
 
     setup(
-        name='rod_align',
+        name='rod_align_api',
         packages=find_packages(),
         ext_modules=[
             CUDAExtension(
-                    name='rod_align',
+                    name='rod_align_api',
                     sources=['src/rod_align_cuda.cpp', 'src/rod_align_kernel.cu'],
                     include_dirs=[current_dir]+torch.utils.cpp_extension.include_paths()
                     )

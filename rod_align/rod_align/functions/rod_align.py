@@ -1,6 +1,6 @@
 import torch
 from torch.autograd import Function
-import rod_align
+import rod_align_api
 
 class RoDAlignFunction(Function):
     @staticmethod

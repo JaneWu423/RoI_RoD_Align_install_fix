@@ -1,6 +1,6 @@
 import torch
 from torch.autograd import Function
-import roi_align
+import roi_align_api
 
 class RoIAlignFunction(Function):
     @staticmethod
